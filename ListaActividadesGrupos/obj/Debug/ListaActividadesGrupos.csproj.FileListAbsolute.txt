@@ -1,0 +1,15 @@
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.csprojAssemblyReference.cache
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\MainWindow.g.cs
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\App.g.cs
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos_MarkupCompile.cache
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos_MarkupCompile.lref
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\bin\Debug\ListaActividadesGrupos.exe.config
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\bin\Debug\ListaActividadesGrupos.exe
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\bin\Debug\ListaActividadesGrupos.pdb
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\MainWindow.baml
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.g.resources
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.Properties.Resources.resources
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.csproj.GenerateResource.cache
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.csproj.CoreCompileInputs.cache
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.exe
+C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.pdb
