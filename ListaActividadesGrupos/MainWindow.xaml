@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ListaActividadesGrupos"
         mc:Ignorable="d"
-        Title="Grupos de Actividades" Height="450" Width="528.8" ResizeMode="CanMinimize">
+        Title="Grupos de Actividades" Height="450" Width="539.287" ResizeMode="CanMinimize">
     <Grid>
         <ListBox x:Name="lbxGrupos" HorizontalAlignment="Left" Height="298" Margin="36,83,0,0" VerticalAlignment="Top" Width="177"/>
         <Button x:Name="btnGenerarRnd" Content="Formar grupos" HorizontalAlignment="Left" Margin="361,336,0,0" VerticalAlignment="Top" Width="121" Height="45" FontWeight="Bold" FontSize="14" Click="BtnGenerarRnd_Click"/>

@@ -13,3 +13,18 @@ C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\De
 C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.csproj.CoreCompileInputs.cache
 C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.exe
 C:\Users\vfgui\source\repos\ListaActividadesGrupos\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.pdb
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.csprojAssemblyReference.cache
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\obj\Debug\MainWindow.g.cs
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\obj\Debug\App.g.cs
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos_MarkupCompile.cache
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos_MarkupCompile.lref
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.exe
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.pdb
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\bin\Debug\ListaActividadesGrupos.exe.config
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\bin\Debug\ListaActividadesGrupos.exe
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\bin\Debug\ListaActividadesGrupos.pdb
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\obj\Debug\MainWindow.baml
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.g.resources
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.Properties.Resources.resources
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.csproj.GenerateResource.cache
+C:\Users\vfgui\OneDrive\Documentos\Visual Studio 2017\Projects\ListaGrupoActividades\ListaActividadesGrupos\obj\Debug\ListaActividadesGrupos.csproj.CoreCompileInputs.cache

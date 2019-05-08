@@ -50,10 +50,6 @@ namespace ListaActividadesGrupos
                 _numeroIntegrantes = int.Parse(tbxNumeroGrupos.Text);
                 _numeroTotalAlumnos = int.Parse(tbxNumeroAlumnos.Text.Trim().Replace(" ", ""));
 
-                
-
-               
-
                 AsignarNumeroAlumnosAs();
             }
             else
@@ -106,6 +102,7 @@ namespace ListaActividadesGrupos
             }
         }
 
+
         private void CrearGrupos()
         {
             _listaAlumnos = new List<int>();
@@ -125,16 +122,55 @@ namespace ListaActividadesGrupos
             _numeroGrupos = (int)Math.Ceiling((double)(_numeroTotalAlumnos / _numeroIntegrantes));
             int indice = 0;
             int contador = _numeroTotalAlumnos;
-            int contadorAlumnosEnGrupo = 0;
-            List<int>[] grupos = new List<int>[_numeroGrupos];
+            int contadorAlumnosGenero_M = 0;
+            int contadorAlumnosGenero_F = 0;
+            int contadorAlumnosGeneroPorGrupo = 0;
+            List<string>[] grupos = new List<string>[_numeroGrupos];
+            bool haContadoM = false;
+
+
             for (int i = 0; i < grupos.Length; i++)
             {
-                grupos[i] = new List<int>();
+                grupos[i] = new List<string>();
             }
             for (int i = 0; i < _numeroTotalAlumnos; i++)
             {
-                grupos[i % _numeroGrupos].Add(_listaAlumnosRestantes[i]);
+                haContadoM = false;
+
+                if (_numeroAlumnas == 0)
+                {
+                    grupos[i % _numeroGrupos].Add(_listaAlumnosRestantes[i].ToString() + " - M");
+                }
+
+                if (_numeroAlumnos == 0)
+                {
+                    grupos[i % _numeroGrupos].Add(_listaAlumnosRestantes[i].ToString() + " - F");
+                }
+
+                if (_mixto && _numeroAlumnas != 0 && _numeroAlumnos != 0)
+                {
+                    if (contadorAlumnosGenero_F < _numeroAlumnas)
+                    {
+                        grupos[i % _numeroGrupos].Add(_listaAlumnosRestantes[i].ToString() + " - F");
+                        contadorAlumnosGenero_F++;
+                        haContadoM = !haContadoM;
+                    }
+
+                    if (contadorAlumnosGenero_M < _numeroAlumnos && !haContadoM)
+                    {
+                        grupos[i % _numeroGrupos].Add(_listaAlumnosRestantes[i].ToString() + " - M");
+                        contadorAlumnosGenero_M++;
+                    }
+                }
+
+                if (!_mixto && _numeroAlumnas != 0 && _numeroAlumnos != 0)
+                {
+                    grupos[i % _numeroGrupos].Add(_listaAlumnosRestantes[i].ToString());
+                }
+
+
             }
+
             for (int i = 0; i < grupos.Length; i++)
             {
                 if (i != 0)
@@ -142,7 +178,20 @@ namespace ListaActividadesGrupos
                 lbxGrupos.Items.Add(" --- Grupo " + (i + 1) + " ---");
                 foreach (var item in grupos[i])
                 {
-                    lbxGrupos.Items.Add(item);
+                    if (_numeroAlumnas > contadorAlumnosGenero_F && !_mixto)
+                    {
+                        lbxGrupos.Items.Add(item + " - F");
+                        contadorAlumnosGenero_F++;
+                    }else if (!_mixto)
+                    {
+                        lbxGrupos.Items.Add(item + " - M");
+                        contadorAlumnosGenero_M++;
+                    }
+
+                    if (_mixto)
+                    {
+                        lbxGrupos.Items.Add(item);
+                    }
                 }
             }
         }
@@ -158,6 +207,18 @@ namespace ListaActividadesGrupos
             if (_numeroIntegrantes > _numeroTotalAlumnos || _numeroIntegrantes == 0)
             {
                 MessageBox.Show("El número de integrantes es incorrecto.", "¡ERROR!");
+                return true;
+            }
+
+            if (_numeroAlumnas == 0 && _mixto || _numeroAlumnos == 0 && _mixto || _numeroAlumnas == _numeroTotalAlumnos && _mixto || _numeroAlumnos == _numeroTotalAlumnos && _mixto)
+            {
+                MessageBox.Show("No se pueden asignar grupos mixtos sin participantes de un género.", "¡ERROR!");
+                return true;
+            }
+
+            if (_numeroAlumnas > _numeroTotalAlumnos || _numeroAlumnos > _numeroTotalAlumnos)
+            {
+                MessageBox.Show("El número de alumnos o alumnas por género es incorrecto.", "¡ERROR!");
                 return true;
             }
 
@@ -181,6 +242,7 @@ namespace ListaActividadesGrupos
             _listaAlumnosRestantes = new List<int>();
             Random rnd = new Random();
             int indice = 0;
+
             while (inputList.Count > 0)
             {
                 indice = rnd.Next(0, inputList.Count);
